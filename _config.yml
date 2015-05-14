@@ -1,0 +1,21 @@
+# Site settings
+title: Cusu.co FC
+email: futbol@cusu.co
+description: > # this means to ignore newlines until "baseurl:"
+    Cusu.co Club de Fútbol, mejor conocido como Cusu.co, es una entidad polideportiva con sede en Managua, NIcaragua.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://cusu.co" # the base hostname & protocol for your site
+twitter_username: cusu.co
+github_username:  cusuco
+facebook_username: cusucofc
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+collections:
+    players:
+        output: true
+        permalink: /jugadores/:path/
