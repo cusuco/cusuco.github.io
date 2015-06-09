@@ -47,3 +47,44 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+.player-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li{
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        padding: 10px;
+        width: 20%;
+        display: block;
+        float: left;
+        margin: 0 1% 1em;
+        text-align: center;
+        height: 9em;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    .player-name{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        color: transparent;
+        padding-top: 50%;
+
+        transition-duration: 0.3s;
+        transition-property: background-color, color;
+        transition-timing-function: ease-out;
+        transform: translateZ(0);
+
+        &:hover{
+            background-color: $grey-color-light;
+            text-decoration: none;
+            color: $text-color;
+        }
+    }
+}

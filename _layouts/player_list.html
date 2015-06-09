@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<h1> Jugadores de Cusu.co </h1>
+<div class="post">
+    <ul class='player-list'>
+        {% for player in site.players %}
+        <li>
+            <a class='player-picture' href="{{ player.url }}">
+                {% if player.img %}
+                    <img src="{{ player.img }}" alt="{{ player.name }}">
+                {% else %}
+                    <img src="/img/cusuco-125x138.png" alt="{{ player.name }}">
+                {% endif %}
+            </a>
+            <a class='player-name' href="{{ player.url }}">{{ player.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

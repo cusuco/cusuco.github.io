@@ -7,7 +7,9 @@ layout: default
     </header>
 
     <article class="player-content">
-        <img src="{{ page.img }}" alt="{{ page.name }} picture">
+        {% if page.img %}
+            <img src="{{ page.img }}" alt="{{ page.name }} picture">
+        {% endif %}
         {{ content }}
     </article>
 </div>
