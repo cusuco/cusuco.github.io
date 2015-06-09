@@ -1,5 +1,5 @@
 ---
 layout: player
-name: Migule Bonilla
+name: Miguel "Chicharito" Bonilla
 collection: players
 ---
