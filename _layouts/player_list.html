@@ -14,6 +14,9 @@ layout: default
                 {% endif %}
             </a>
             <a class='player-name' href="{{ player.url }}">{{ player.name }}</a>
+            {% if player.number %}
+            <div class="player-number"><span>{{ player.number }}</span></div>
+            {% endif %}
         </li>
         {% endfor %}
     </ul>
